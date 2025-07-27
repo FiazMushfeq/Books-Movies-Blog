@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Example route import
-const exampleRoutes = require('./routes/example');
+const exampleRoutes = require('./routes/auth');
 app.use('/api/example', exampleRoutes);
 
 app.get('/', (req, res) => {
